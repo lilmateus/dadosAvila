@@ -66,7 +66,7 @@ You can deploy this contract on an Ethereum blockchain using tools like Remix ID
 
 
 
-a unit test for the "transfer" function, considering the entire contract
+> a unit test for the "transfer" function, considering the entire contract
 
 
 
@@ -113,13 +113,13 @@ In this unit test:
 2. The `testTransfer` function tests the `transfer` function by transferring 100 tokens from the owner (`tx.origin`) to a dummy recipient address. It checks whether the sender's balance decreases by the transfer amount and whether the recipient's balance increases by the transfer amount.
 
 You can run this unit test using the Truffle testing framework, which provides utilities like `Assert` for making assertions and `DeployedAddresses` for interacting with deployed contracts during testing.
-
-
-
-could you generate a symbolic unit test instead? to run in foundry 
-
-
-
+    
+    
+    
+> could you generate a symbolic unit test instead? to run in foundry 
+    
+    
+    
 Certainly! Foundry supports symbolic execution for smart contracts, which allows for generating unit tests that explore different execution paths within the contract. Here's how you could create a symbolic unit test for the `transfer` function of the `SimpleToken` contract:
 
 ```solidity
